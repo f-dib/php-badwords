@@ -17,17 +17,19 @@
 </head>
 <body>
     <div class="container-xxl p-5">
-        <div class="d-flex flex-column justify-content-center align-items-center gap-5">
+        <div class="d-flex flex-column text-center gap-5">
             <h1 class="text-danger">Il Censuratore</h1>
         
             <form action="results.php">
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Inserisci Testo da Censurare</label>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Inserisci testo da censurare</label>
+                    <textarea name="censored-text" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <div>
-                    <label for="">Inserisci la parola da censurare</label>
-                    <input name="bad-word" type="text" placeholder="Inserisci parola">
+                    <div class="d-flex flex-column align-items-center mb-3">
+                        <label for="">Inserisci la parola da censurare</label>
+                        <input name="bad-word" type="text" placeholder="Inserisci parola">
+                    </div>
                 </div>
                 <input type="submit">
             </form>
